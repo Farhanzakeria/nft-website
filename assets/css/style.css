@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/body-bg.jpg");
+    font-family: 'Shadow', cursive;
+    background-size: contain;
+    font-weight: 100;
+}
+
+/* Global Styles */
+
+.secondary-headings {
+    text-shadow: 2px 2px 3px #67dfe3;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.global-padding {
+    padding-top: 110px;
+}
+
+.center-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items {
+    text-align: center;
+    position: relative;
+}
+
+
+header img {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-items h2 {
+    font-weight: 100;
+    position: absolute;
+    right: -15px;
+    padding: 5px 5px 0 30px;
+    top: 10px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 10%;
+    border: 2px solid black;
+    color: #000;
+}
+
+.twitter h2 {
+    top: 15px;
+}
+
+.medium h2{
+    right: -21px;
+}
+
+/* Header Styling End */
+
+/* Hero Section Styling */
+
+.hero {
+    text-align: center;
+}
+
+.hero-img {
+    width: 90%;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: #D81F4E;
+    font-family: "Montserrat" , cursive;
+    margin-bottom: 80px;
+}
+
+.hero-span {
+    display: block;
+    -webkit-text-stroke: 0.2px black;
+    font-family: 'Shadow' , sans-serif;
+    margin-top: -7px;
+    color: black;
+    text-shadow: 2px 2px #67dfe3;
+}
+.content-section {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 44px 30px 0 30px;
+}
+
+.layer-img {
+    width: 40%;
+}
+
+.layer-text {
+    width: 50%;
+}
+
+
+.layer-img img {
+    width: 100%;
+}
+
+.layer-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.layer-text h2 {
+    margin-bottom: 10px;
+}
+
+.blue-brush {
+    background-image: url("../images/blue-brush.png");
+    background-size: cover;
+}
+
+/* Hero Section End */
+
+
+/* Projects Section Styling */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.7rem;
+}
+
+.credits {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.projects-card {
+    position: relative;
+    width: 21%;
+
+}
+
+.projects-card img {
+    width: 100%;
+    border: 2px solid #030709;
+    border-radius: 10%;
+}
+
+.credits-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0 0 20px 20px;
+    border: 2px solid #030709;
+    text-transform: uppercase;
+    font-family: "Montserrat" , sans-serif;
+}
+
+/* Projects Section End */
+
+/* FAQ Section Styling */
+
+.faq-overlay {
+    position: relative;
+    min-height: 300px;
+    text-align: center;
+}
+
+.faq-girl {
+    width: 20%
+}
+
+.faq-cloud {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 40%;
+    left: 31%;
+}
+
+.faqs h2 {
+    text-align: center;
+}
+
+.faqs-headings::after {
+    content: "+";
+    position: absolute;
+    right: 2%;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs-headings.ui-accordion-header-active::after {
+    content: "-";
+    font-size: 30px;
+}
+
+.faqs-headings {
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+    margin-top: 60px;
+    padding: 0 50px 0 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.faq-card p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 30px 20px 0 20px;
+}
+
+/* FAQ Section End */
+
+/* Footer Styling */
+
+.footer{
+    width: 100%;
+}
+.footer img {
+    width: 100%;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    header h2 {
+        display: none;
+    }
+
+    .credits-overlay{
+        font-size: 1.5rem;
+    }
+
+    body {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 924px) {
+
+    .projects-card {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .blue-brush {
+        background-image: none;
+        font-size: 1.5rem;
+    }
+
+    .secondary-headings {
+        color: #030709;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 726px) {
+    .credits-overlay {
+        font-size: 1.2rem;
+    }
+
+    .content-section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .content-section {
+        flex-wrap: wrap;
+    }
+
+    .content-section-2 .layer-img {
+        width: 60%;
+    }
+
+    .layer-img {
+        width: 80%;
+    }
+
+    .layer-text {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .faq-girl {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 545px) {
+.credits-overlay{
+    font-size: 1rem;
+}
+}
+
+
+@media screen and (max-width: 428px) {
+
+    .hero h1 {
+        padding-top: 30px;
+        font-size: 3rem;
+    }
+
+    .content-section {
+        padding-top: 20px;
+    }
+
+    .hero-span {
+        margin: 0;
+    }
+
+    .blue-brush {
+        font-size: 1.2rem;
+    }
+
+    .layer-text p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .projects h2 {
+        padding: 0 53px;
+    }
+
+    .credits {
+        flex-wrap: wrap;
+    }
+
+    .projects-card {
+        width: 55%;
+    }
+
+    .faq-girl {
+        width: 33%;
+    }
+
+    .faq-cloud {
+        width: 47%;
+        left: 27%;
+    }
+}

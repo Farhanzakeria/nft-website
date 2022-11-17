@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Shadow';
+    src: url('./shadow-7wdr-webfont.woff2') format('woff2'),
+         url('./shadow-7wdr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
